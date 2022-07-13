@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House Plants</title>
+    <style>
+        body{
+            background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color: black;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+            border: 5px solid;
+            padding: 15px;
+            border-radius: 3px;
+            border-color: rgb(77, 136, 192);
+        }
+        hr/ {
+            color: rgb(0, 0, 0);
+            height: 10px;
+        }
+h2{
+    text-align: center;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+    color:rgb(15, 110, 52);
+}
+img{
+display: block;
+margin: 0 auto;
+border-radius: 50px;
+max-width: 65%;
+padding: 20px;
+}
+p{
+font-size: 20px;
+font-family:'Times New Roman', Times, serif;
+margin: 20 0 15;
+line-height: 25px;
+padding: none;
+}
+ul{
+line-height: 20px;
+color: rgb(13, 59, 44);
+font-family:'Times New Roman', Times, serif;
+font-size: 22px;
+line-height: 35px;
+padding: 0;
+margin: 0 auto;
+text-align: center;
+}
+.green-text{
+    color: green;
+}
+.water{
+    text-decoration:none;
+    color:rgb(13, 59, 44);
+}
+.soil{
+    text-decoration:none;
+    color:rgb(13, 59, 44);
+}.light{
+    text-decoration:none;
+    color:rgb(13, 59, 44);
+}
+a:hover {
+  opacity: 0.7;
+  color: rgb(51, 154, 185);
+  text-decoration: underline;
+}
+button{
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 25px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    border-radius: 30px;
+    padding: 16px 24px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    transition: all 200 ms ease-in-out;
+    background-color: rgb(51, 154, 185);
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(61, 92, 30);
+}
+.footer{
+    text-align: center;
+    color:black;
+    font-size: 18px;
+    opacity: 0.7;
+}
+.container{
+    margin: 0 auto;
+    max-width: 900px;
+    padding:20px 40px;
+}
+    </style>
+  </head>
+  <div class="container">
+  <body>
+    <h1>🪴 House Plant Care 🪴
+    </h1>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/026/917/original/plantoasis.jpeg?1644441928"
+      />
+      <br/>
+      <hr/>
+      <br/>
+    <p>
+     My <em>journey</em> caring for indoor plants began many years ago. I always enjoyed
+      outdoor gardening and decided to try my hand at indoor plant care. Anyone
+      can learn and care for plants with patience and trial-and-error. I myself
+      have had many sad plant moments but with practice I now have a <span class="green-text"><strong>successful
+      indoor oasis</strong></span>. Plants just need the right conditions for continuous growth.
+      Such as well draining soil, nutrients, proper lighting, watering when
+      needed and air.
+    </p>
+    <br/>
+     <hr/>
+     <br/>
+    <h2>
+        Healthy Plant Tips
+    </h2>
+    <ul style="list-style-type: none;">
+<li>
+    <a href="https://en.wikipedia.org/wiki/Houseplant#Plant_requirements"class="water"target=“_blank”>💧 Watering Needs
+</a>
+    </li>
+<li>
+    <a href="https://en.wikipedia.org/wiki/Houseplant_care#Soil"class="soil"target=“_blank”>🪴 Soil Types 
+    </a>
+    </li>
+<li>
+    <a href="https://en.wikipedia.org/wiki/Houseplant_care#Light_requirements"class="light"target=“_blank”> ☀️Sunlight & Placement
+    </a>
+   </li>
+</ul>
+       <button class="newsletter-button":>Get Newsletter
+    </button>
+    <br/>
+   <p class=footer>
+This page was built by
+<a href=“lindsaygoshiro@gmail.com" target=“_blank”>Lindsay Oshiro
+</a>
+</p> 
+<script>
+function newsletter(){
+    let name= prompt("What is your name?");
+    let email= prompt("What is your email address?");
+    let age= prompt("What is your age?")
+    if (age <12){
+        alert("Sorry, " + name +"! I don't think this newsletter is for you! 😕");
+    } else {
+    alert("Thank you, " + name + "! You are signed up to recieve our newsletter!");
+}
+}
+let newsletterButton=document.querySelector(".newsletter-button");
+newsletterButton.addEventListener("click",newsletter);
+</script>
+  </body>
+</div>
+  </html>
